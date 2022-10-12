@@ -61,7 +61,7 @@ public class ListarCursoFragment extends Fragment implements Response.Listener<J
         dialog =new ProgressDialog(getContext());
         dialog.setMessage("Consultando Personajes");
         dialog.show();
-        String url="http://192.168.19.91:8080/apis/listarcurso.php";
+        String url="http://192.168.101.2:8080/apis/listarcurso.php";
         jsonObjectRequest= new JsonObjectRequest (Request.Method.GET, url, null,this,this);
         request.add(jsonObjectRequest);
     }

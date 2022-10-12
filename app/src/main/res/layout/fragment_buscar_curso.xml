@@ -10,70 +10,134 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical"
-       android:layout_margin="30dp">
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Consultar Personaje"
-           android:textStyle="bold"
-           android:layout_marginTop="30dp"
-           android:gravity="center"
-           android:textSize="30dp"/>
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Identificador"
-           android:textColor="@color/black"/>
+       android:layout_margin="20dp">
 
-       <EditText
+       <LinearLayout
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:layout_marginTop="26dp"
-           android:id="@+id/edtIdBC"
-           android:hint="Identificador"/>
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="80dp"
-           android:id="@+id/btnBuscarCurso"
-           android:text="Consultar"
+           android:orientation="horizontal"
            android:layout_gravity="center"
-           android:padding="5dp"/>
+           android:layout_margin="10dp">
+
+           <EditText
+               android:id="@+id/edtIdBC"
+               android:layout_width="wrap_content"
+               android:layout_height="69dp"
+               android:hint="@string/busc_ident"
+               android:padding="10dp"
+               android:textSize="26sp" />
+
+           <Button
+               android:id="@+id/btnBuscarCurso"
+               android:layout_width="152dp"
+               android:layout_height="69dp"
+               android:layout_marginLeft="35dp"
+               android:padding="8dp"
+               android:text="@string/busc_btn_buscar"
+               android:textSize="18sp"/>
+       </LinearLayout>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/busc_nombre"
+           android:textSize="20sp"
+           android:textColor="@color/splash"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/txtNombreBC"
-           android:textSize="26dp"/>
+           android:textSize="18sp"
+           android:textColor="@color/splash_celeste"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/busc_desc"
+           android:textSize="20sp"
+           android:textColor="@color/splash"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/txtDescripcionBC"
-           android:textSize="26dp"/>
+           android:textSize="18sp"
+           android:textColor="@color/splash_celeste"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/busc_nivel"
+           android:textSize="20sp"
+           android:textColor="@color/splash"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/txtNivelBC"
-           android:textSize="26dp"/>
+           android:textSize="18sp"
+           android:textColor="@color/splash_celeste"/>
        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/busc_hora"
+           android:textSize="20sp"
+           android:textColor="@color/splash"/>
+       <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:id="@+id/txtHoraTeoriaBC"
-           android:textSize="26dp"/>
+           android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/busc_hora_teo"
+                   android:textSize="20sp"
+                   android:textColor="@color/splash"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/txtHoraTeoriaBC"
+                   android:textSize="18sp"
+                   android:textColor="@color/splash_celeste"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="90dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/busc_hora_prac"
+                   android:textSize="20sp"
+                   android:textColor="@color/splash"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/txtHoraPracticaBC"
+                   android:textSize="18sp"
+                   android:textColor="@color/splash_celeste"/>
+           </LinearLayout>
+
+       </LinearLayout>
        <TextView
-           android:layout_width="match_parent"
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:id="@+id/txtHoraPracticaBC"
-           android:textSize="26dp"/>
+           android:text="@string/busc_Proyecto"
+           android:textSize="20sp"
+           android:textColor="@color/splash"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/txtProyectoBC"
-           android:textSize="26dp"/>
+           android:textSize="18sp"
+           android:textColor="@color/splash_celeste"/>
+
        <ImageView
-           android:layout_width="250dp"
-           android:layout_height="250dp"
            android:id="@+id/imgBC"
-           android:src="@drawable/ic_menu_camera"
-           android:layout_gravity="center"/>
+           android:layout_width="297dp"
+           android:layout_height="338dp"
+           android:layout_gravity="center"
+           android:src="@drawable/ic_menu_camera" />
 
    </LinearLayout>
 </FrameLayout>

@@ -29,7 +29,7 @@ public class NavDraw_Curso_Cahuaya extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarNavDrawCursoCahuaya.toolbar);
-        binding.appBarNavDrawCursoCahuaya.fab.setOnClickListener(new View.OnClickListener() {
+        binding.appBarNavDrawCursoCahuaya.toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)

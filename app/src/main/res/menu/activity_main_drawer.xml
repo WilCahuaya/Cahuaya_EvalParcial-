@@ -6,15 +6,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_insertar_curso"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_insertar_curso" />
+            android:icon="@drawable/ic_registra_curso"
+            android:title="@string/menu_insertar_curso"
+            android:textColor="@color/splash"
+            android:textSize="24sp"/>
         <item
             android:id="@+id/nav_buscar_curso"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_buscar_curso" />
+            android:icon="@drawable/ic_buscar_curso"
+            android:title="@string/menu_buscar_curso"
+            android:textColor="@color/splash"
+            android:textSize="24sp"/>
         <item
             android:id="@+id/nav_listar_curso"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_listar_curso" />
+            android:icon="@drawable/ic_listar_curso"
+            android:title="@string/menu_listar_curso"
+            android:textColor="@color/splash"
+            android:textSize="24sp"/>
     </group>
 </menu>

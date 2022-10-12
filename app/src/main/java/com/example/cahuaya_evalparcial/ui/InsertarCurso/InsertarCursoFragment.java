@@ -98,7 +98,9 @@ public class InsertarCursoFragment extends Fragment{
 
     private void insertCurso() {
         //Mostrar el diálogo de progreso
-        String url="http://192.168.19.91:8080/apis/insertarcurso.php";
+        String url="http://192.168.101.2:8080/apis/insertarcurso.php";
+/*        String url="http://192.168.21.91:8080/apis/insertarcurso.php";*/
+
         final ProgressDialog loading = ProgressDialog.show(getContext(), "Subiendo...", "Espere por favor...", false, false);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {

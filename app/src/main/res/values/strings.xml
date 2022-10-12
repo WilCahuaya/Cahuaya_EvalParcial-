@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Cahuaya_EvalParcial</string>
+    <string name="app_name">Programing Expert</string>
     <string name="title_activity_nav_draw_curso_cahuaya">NavDraw_Curso_Cahuaya</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Programming Expert</string>
+    <string name="nav_header_subtitle">programmingexpert.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -20,9 +20,18 @@
     <string name="edt_codigo">Código</string>
     <string name="edt_descripcion">Descripción</string>
     <string name="edt_nivel">Nivel</string>
-    <string name="edt_horas_teoria">Duración Horas Teoria</string>
-    <string name="edt_horas_practica">Duración Horas Practica</string>
+    <string name="edt_horas_teoria">Duración Horas Teoría</string>
+    <string name="edt_horas_practica">Duración Horas Práctica</string>
     <string name="edt_proyecto">Proyecto del Curso</string>
     <string name="btn_insertar_imagen">Insertar Imagen</string>
     <string name="btn_fragme_registrar">Registrar Curso</string>
+    <string name="busc_Proyecto">Proyecto:  </string>
+    <string name="busc_hora_prac">Práctica:  </string>
+    <string name="busc_hora_teo">Teoría:  </string>
+    <string name="busc_hora">Horas de:  </string>
+    <string name="busc_nivel">Nivel:  </string>
+    <string name="busc_desc">Descripción:  </string>
+    <string name="busc_nombre">Nombre:  </string>
+    <string name="busc_btn_buscar">Consultar</string>
+    <string name="busc_ident">Identificador</string>
 </resources>

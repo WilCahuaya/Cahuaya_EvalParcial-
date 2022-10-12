@@ -71,8 +71,10 @@ public class  BuscarCursoFragment extends Fragment implements Response.Listener<
         progress= new ProgressDialog(getContext());
         progress.setMessage("Consultando........");
         progress.show();
-        String url="http://192.168.19.91:8080/apis/consultarcurso.php?id="+
+        String url="http://192.168.101.2:8080/apis/consultarcurso.php?id="+
                 edtId.getText().toString();
+//        String url="http://192.168.21.91:8080/apis/consultarcurso.php?id="+
+//                edtId.getText().toString();
 
         url=url.replace(" ","%20");
 
@@ -99,9 +101,9 @@ public class  BuscarCursoFragment extends Fragment implements Response.Listener<
             curso.setNombre(jsonObject.optString("nombre"));
             curso.setDescripcion(jsonObject.optString("descripcion"));
             curso.setNivel(jsonObject.optString("nivel"));
-            curso.setDescripcion(jsonObject.optString("horaTeoria"));
-            curso.setDescripcion(jsonObject.optString("horaPractica"));
-            curso.setDescripcion(jsonObject.optString("proyecto"));
+            curso.setHoraTeoria(jsonObject.optString("horaTeoria"));
+            curso.setHoraPractica(jsonObject.optString("horaPractica"));
+            curso.setProyecto(jsonObject.optString("proyecto"));
             curso.setDato(jsonObject.optString("imagen"));
         }
         catch (JSONException e){

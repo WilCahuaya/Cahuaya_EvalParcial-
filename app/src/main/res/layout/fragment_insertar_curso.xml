@@ -11,13 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="25dp">
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Insertar Curso"
-            android:textSize="35sp"
-            android:gravity="center"/>
         <EditText
             android:id="@+id/edtIdIC"
             android:layout_width="match_parent"
@@ -25,7 +18,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/edt_codigo"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/edtNombreoIC"
@@ -34,7 +28,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/edt_nombre"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/edtDescripcionIC"
@@ -43,7 +38,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/edt_descripcion"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
         <EditText
             android:id="@+id/edtNivelIC"
             android:layout_width="match_parent"
@@ -51,7 +47,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/edt_nivel"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/edtHorasTeoriaIC"
@@ -60,7 +57,8 @@
             android:ems="10"
             android:inputType="numberSigned"
             android:hint="@string/edt_horas_teoria"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
         <EditText
             android:id="@+id/edtHorasPracticaIC"
             android:layout_width="match_parent"
@@ -68,7 +66,8 @@
             android:ems="10"
             android:inputType="numberSigned"
             android:hint="@string/edt_horas_practica"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
         <EditText
             android:id="@+id/edtProyectoCursoIC"
             android:layout_width="match_parent"
@@ -76,32 +75,37 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/edt_proyecto"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:id="@+id/imgMostrarImageIC"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            tools:srcCompat="@mipmap/ic_camera"
-            android:layout_marginTop="10dp" />
+            android:layout_height="245dp"
+            android:layout_marginTop="10dp"
+            tools:srcCompat="@mipmap/ic_camera" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center">
+
             <Button
                 android:id="@+id/btnCargarImagenIC"
-                android:layout_width="wrap_content"
+                android:layout_width="178dp"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_insertar_imagen"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/plomo"/>
+                android:backgroundTint="@color/plomo"
+                android:text="@string/btn_insertar_imagen"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnInsertCurso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_fragme_registrar"/>
+                android:text="@string/btn_fragme_registrar"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"/>
         </LinearLayout>
 
     </LinearLayout>
